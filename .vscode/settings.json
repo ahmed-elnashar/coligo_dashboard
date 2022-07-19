@@ -1,0 +1,11 @@
+{
+  "reactSnippets.settings.prettierEnabled": true,
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "html.format.preserveNewLines": true,
+    "html.format.maxPreserveNewLines": null,
+    "markdown.preview.breaks": false
+}
