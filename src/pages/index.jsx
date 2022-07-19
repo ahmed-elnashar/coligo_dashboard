@@ -3,6 +3,7 @@ export { default as Courses } from './Courses';
 export { default as Instructors } from './Instructors';
 export { default as Students } from './Students';
 export { default as Schedule } from './Schedule';
+export { default as Announcements } from './Announcements';
 export { default as Kanban } from './Kanban';
 export { default as Editor } from './Editor';
 export { default as Area } from './Charts/Area';
