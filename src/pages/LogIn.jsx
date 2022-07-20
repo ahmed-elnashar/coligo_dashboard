@@ -1,5 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { FaChalkboardTeacher } from 'react-icons/fa';
+
 import { logIn } from '../redux/store/auth';
 
 
@@ -10,8 +12,10 @@ const LogIn = () => {
     <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div>
-          <img className="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg" alt="Workflow" />
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+          <div className='flex justify-center'>
+            <FaChalkboardTeacher className='text-6xl text-blue-500' />
+          </div>
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your <span className='text-blue-500'>Coligo</span> account</h2>
         </div>
         <form className="mt-8 space-y-6" onClick={e => e.preventDefault()} >
           <input type="hidden" name="remember" value="true" />

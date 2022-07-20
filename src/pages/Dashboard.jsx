@@ -2,6 +2,9 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { GoPrimitiveDot } from 'react-icons/go';
 
+import { useTranslation } from 'react-i18next';
+
+
 import { Stacked, Button, SparkLine } from '../components';
 import Announcement from '../components/Announcement';
 import Quiz from '../components/Quiz';
@@ -11,6 +14,7 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
   const currentColor = useSelector(state => state.theme.color);
+  const { t } = useTranslation();
   return (
     <div className='mt-12'>
       <div className='flex flex-wrap lg:flex-nowrap justify-center'>
@@ -20,7 +24,7 @@ const Dashboard = () => {
           bg-hero-pattern bg-no-repeat bg-cover bg-center'>
           <div className='flex justify-between items-center'>
             <div>
-              <p className='font-bold text-gray-400'>Courses</p>
+              <p className='font-bold text-gray-400'>{t('dashboardCard.name')}</p>
               <p className='text-2xl'>2,359</p>
             </div>
           </div>
@@ -127,7 +131,7 @@ const Dashboard = () => {
             <div className='flex justify-between'>
               <h1 className='font-semibold text-xl mt-2 mb-3'>Announcements</h1>
               <p>
-                <Link className='underline' style={{ color: {currentColor} }} to={'/announcements'}>All</Link>
+                <Link className='underline' style={{ color: { currentColor } }} to={'/announcements'}>All</Link>
               </p>
             </div>
             {

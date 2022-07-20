@@ -7,6 +7,8 @@ import store from './redux/store';
 import './index.css';
 import App from './App';
 
+import './i18n';
+
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
