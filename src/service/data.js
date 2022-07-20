@@ -1669,16 +1669,7 @@ export const earningData = [
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
     pcColor: 'red-600',
-  },
-  {
-    icon: <IoMdContacts />,
-    amount: '890',
-    percentage: '-12%',
-    title: 'Instructors',
-    iconColor: 'rgb(0, 194, 146)',
-    iconBg: 'rgb(235, 250, 242)',
-    pcColor: 'red-600',
-  },
+  }
 ];
 
 export const instructorsData = [
