@@ -3,6 +3,8 @@ export { default as ThemeSettings } from './ThemeSettings';
 export { default as Sidebar } from './Sidebar';
 export { default as Navbar } from './Navbar';
 export { default as Footer } from './Footer';
+export { default as Announcement } from './Announcement';
+export { default as Quiz } from './Quiz';
 export { default as Cart } from './Cart';
 export { default as Chat } from './Chat';
 export { default as Notifications } from './Notifications';

@@ -5,7 +5,7 @@ import { FaChalkboardTeacher } from 'react-icons/fa';
 import { MdOutlineCancel } from 'react-icons/md';
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
-import { toggleMenu, setScreenSize } from '../redux/store/app';
+import { toggleMenu } from '../redux/store/app';
 import { links } from '../data/dummy';
 
 
