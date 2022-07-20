@@ -65,6 +65,8 @@ const appReducer = (state = initialState, action) => {
   }
 };
 
+export default appReducer;
+
 // Action Creators
 export const toggleMenu = (currentState) => {
   return {
@@ -107,5 +109,3 @@ export const setScreenSize = (size) => {
     payload: size
   };
 };
-
-export default appReducer;

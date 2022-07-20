@@ -35,6 +35,7 @@ const Navbar = () => {
   const activeNotifications = useSelector(state => state.app.notifications);
   const activeUserProfile = useSelector(state => state.app.userProfile);
   const screenSize = useSelector(state => state.app.screenSize);
+  const currentColor = useSelector(state => state.theme.color);
   const dispatch = useDispatch();
 
 
@@ -56,7 +57,7 @@ const Navbar = () => {
       <NavButton
         title='Menu'
         func={() => dispatch(toggleMenu(activeMenu))}
-        color='blue'
+        color={currentColor}
         icon={<AiOutlineMenu />}
       />
 
@@ -64,21 +65,21 @@ const Navbar = () => {
         <NavButton
           title='Cart'
           func={() => dispatch(toggleCart(activeCart))}
-          color='blue'
+          color={currentColor}
           icon={<FiShoppingCart />}
         />
         <NavButton
           title='Chat'
           dotColor='#03C907'
           func={() => dispatch(toggleChat(activeChat))}
-          color='blue'
+          color={currentColor}
           icon={<BsChatLeft />}
         />
         <NavButton
           title='Notifications'
           dotColor='#03C907'
           func={() => dispatch(toggleNotifications(activeNotifications))}
-          color='blue'
+          color={currentColor}
           icon={<RiNotification3Line />}
         />
         <TooltipComponent content="Profile" position='BottomCenter'>

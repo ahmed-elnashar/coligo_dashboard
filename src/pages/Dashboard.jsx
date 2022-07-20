@@ -1,17 +1,16 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { BsCurrencyDollar } from 'react-icons/bs';
 import { GoPrimitiveDot } from 'react-icons/go';
-import { uuid } from 'node-uuid';
 
-import { Stacked, Pie, Button, SparkLine } from '../components';
+import { Stacked, Button, SparkLine } from '../components';
 import Announcement from '../components/Announcement';
 import Quiz from '../components/Quiz';
-import { earningData, SparklineAreaData, ecomPieChartData, announcementsData, quizzesData } from '../data/dummy';
+import { earningData, SparklineAreaData, announcementsData, quizzesData } from '../data/dummy';
 import { Link } from 'react-router-dom';
 
 
 const Dashboard = () => {
+  const currentColor = useSelector(state => state.theme.color);
   return (
     <div className='mt-12'>
       <div className='flex flex-wrap lg:flex-nowrap justify-center'>
@@ -28,7 +27,7 @@ const Dashboard = () => {
           <div className='mt-6'>
             <Button
               color='white'
-              bgColor='blue'
+              bgColor={currentColor}
               text='View Exams Tips'
               borderRadius='10px'
               size='md'
@@ -98,18 +97,18 @@ const Dashboard = () => {
               <div className='mt-5'>
                 <SparkLine
                   id='line-sparkLine'
-                  currentColor='blue'
+                  currentColor={currentColor}
                   type='Line'
                   height='80px'
                   width='250px'
                   data={SparklineAreaData}
-                  color='blue'
+                  color={currentColor}
                 />
               </div>
               <div className='mt-10'>
                 <Button
                   color='white'
-                  bgColor='blue'
+                  bgColor={currentColor}
                   text='Download Report'
                   borderRadius='10px'
                 />
@@ -128,7 +127,7 @@ const Dashboard = () => {
             <div className='flex justify-between'>
               <h1 className='font-semibold text-xl mt-2 mb-3'>Announcements</h1>
               <p>
-                <Link className='underline' style={{ color: 'blue' }} to={'/announcement'}>All</Link>
+                <Link className='underline' style={{ color: {currentColor} }} to={'/announcement'}>All</Link>
               </p>
             </div>
             {
