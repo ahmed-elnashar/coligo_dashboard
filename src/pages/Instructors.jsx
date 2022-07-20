@@ -4,7 +4,7 @@ import {
   ColumnDirective, Page, Search, Inject, Toolbar
 } from '@syncfusion/ej2-react-grids';
 
-import { instructorsData, contextMenuItems, instructorsGrid } from '../data/dummy';
+import { instructorsData, instructorsGrid } from '../service/data';
 import { Header } from '../components';
 
 const Instructors = () => {

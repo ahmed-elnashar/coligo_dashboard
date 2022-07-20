@@ -5,7 +5,7 @@ import { GoPrimitiveDot } from 'react-icons/go';
 import { Stacked, Button, SparkLine } from '../components';
 import Announcement from '../components/Announcement';
 import Quiz from '../components/Quiz';
-import { earningData, SparklineAreaData, announcementsData, quizzesData } from '../data/dummy';
+import { earningData, SparklineAreaData, announcementsData, quizzesData } from '../service/data';
 import { Link } from 'react-router-dom';
 
 
@@ -59,7 +59,7 @@ const Dashboard = () => {
       </div>
       {/* Revenue Card */}
       <div className='flex gap-10 flex-wrap justify-center'>
-        <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780'>
+        <div className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 lg:mx-5 p-4 rounded-2xl lg:w-full md:w-780'>
           <div className='flex justify-between'>
             <p className='font-semibold text-xl'>Revenue Updates</p>
             <div className='flex items-center gap-4'>
@@ -75,7 +75,7 @@ const Dashboard = () => {
           </div>
           {/* Left Stats */}
           <div className='mt-10 flex gap-10 flex-wrap justify-center'>
-            <div className='border-r-1 border-color m-4 pr-10'>
+            <div className='lg:border-r-1 border-color m-4 pr-10'>
               <div>
                 <p>
                   <span className='text-3xl font-semibold'>$93,438</span>
@@ -127,7 +127,7 @@ const Dashboard = () => {
             <div className='flex justify-between'>
               <h1 className='font-semibold text-xl mt-2 mb-3'>Announcements</h1>
               <p>
-                <Link className='underline' style={{ color: {currentColor} }} to={'/announcement'}>All</Link>
+                <Link className='underline' style={{ color: {currentColor} }} to={'/announcements'}>All</Link>
               </p>
             </div>
             {

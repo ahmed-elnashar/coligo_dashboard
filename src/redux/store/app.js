@@ -5,7 +5,7 @@ const initialState = {
   userProfile: false,
   notifications: false,
   menu: true,
-  screenSize: undefined
+  screenSize: undefined,
 };
 
 // Action Types

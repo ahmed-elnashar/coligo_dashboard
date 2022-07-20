@@ -5,7 +5,7 @@ import {
   Filter, Page, ExcelExport, PdfExport, Edit, Inject
 } from '@syncfusion/ej2-react-grids';
 
-import { coursesData, contextMenuItems, coursesGrid } from '../data/dummy';
+import { coursesData, coursesGrid } from '../service/data';
 import { Header } from '../components';
 
 const Courses = () => {

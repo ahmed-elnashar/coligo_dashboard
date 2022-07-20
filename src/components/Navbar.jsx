@@ -9,7 +9,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { toggleMenu, toggleCart, toggleChat, toggleNotifications, toggleUserProfile, setScreenSize } from '../redux/store/app';
 
-import avatar from '../data/avatar.jpg';
+import avatar from '../service/avatar.jpg';
 import { Cart, Chat, Notifications, UserProfile } from '.';
 
 const NavButton = ({ title, func, icon, color, dotColor }) => (

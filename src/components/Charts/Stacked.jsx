@@ -5,7 +5,7 @@ import {
   StackingColumnSeries, Tooltip
 } from '@syncfusion/ej2-react-charts';
 
-import { stackedCustomSeries, stackedPrimaryXAxis, stackedPrimaryYAxis } from '../../data/dummy';
+import { stackedCustomSeries, stackedPrimaryXAxis, stackedPrimaryYAxis } from '../../service/data';
 
 const Stacked = ({ width, height }) => {
   return (

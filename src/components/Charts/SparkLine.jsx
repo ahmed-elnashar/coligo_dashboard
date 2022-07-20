@@ -22,6 +22,7 @@ const SparkLine = ({ id, height, width, color, data, type, currentColor }) => {
       markerSettings={{ visible: ['All'], size: 2.5, fill: currentColor }}
       tooltipSettings={{
         visible: true,
+        // eslint-disable-next-line no-template-curly-in-string
         format: '${x} course | revenue ${yval}',
         trackLineSettings: {
           visible: true

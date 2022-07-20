@@ -5,7 +5,7 @@ import {
   Toolbar, Sort, Filter
 } from '@syncfusion/ej2-react-grids';
 
-import { studentsData, studentsGrid } from '../data/dummy';
+import { studentsData, studentsGrid } from '../service/data';
 import { Header } from '../components';
 
 const Students = () => {
